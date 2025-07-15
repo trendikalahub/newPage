@@ -118,38 +118,26 @@ class LoginScreen extends StatelessWidget {
                         borderRadius: BorderRadius.circular(12),
                         boxShadow: const [
                           BoxShadow(
-                            color: Colors.black26,
-                            blurRadius: 4,
-                            offset: Offset(0, 2),
+                            color: Color.fromARGB(227, 0, 0, 0),
+                            blurRadius: 12,
+                            offset: Offset(0, 3),
                           ),
                         ],
                       ),
-                      child: Container(
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(12),
-                          boxShadow: const [
-                            BoxShadow(
-                              color: Color.fromARGB(227, 0, 0, 0),
-                              blurRadius: 12,
-                              offset: Offset(0, 3),
-                            ),
-                          ],
-                        ),
-                        child: ElevatedButton(
-                          onPressed: () {
-                            print('Button clicked');
-                          },
-                          style: ElevatedButton.styleFrom(
-                            backgroundColor: Colors.white,
-                            foregroundColor: Colors.black87,
-                            padding: const EdgeInsets.symmetric(
-                                horizontal: 40, vertical: 12),
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(12),
-                            ),
+                      child: ElevatedButton(
+                        onPressed: () {
+                          print('Button clicked');
+                        },
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.white,
+                          foregroundColor: Colors.black87,
+                          padding: const EdgeInsets.symmetric(
+                              horizontal: 40, vertical: 12),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(12),
                           ),
-                          child: const Text('Login'),
                         ),
+                        child: const Text('Login'),
                       ),
                     ),
                     const SizedBox(height: 16),
