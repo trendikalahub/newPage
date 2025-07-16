@@ -40,6 +40,7 @@ class LoginScreen extends StatelessWidget {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
+              //First Section
               Padding(
                 padding:
                     const EdgeInsets.symmetric(vertical: 16, horizontal: 16),
@@ -104,11 +105,9 @@ class LoginScreen extends StatelessWidget {
               //second section
               Container(
                 width: double.infinity,
-                decoration: const BoxDecoration(
+                decoration: BoxDecoration(
                   color: Color(0xFF0E4466),
-                  borderRadius: BorderRadius.all(
-                    Radius.circular(12),
-                  ),
+                  borderRadius: BorderRadius.circular(12),
                 ),
                 padding: const EdgeInsets.symmetric(vertical: 24),
                 child: Column(
@@ -132,10 +131,7 @@ class LoginScreen extends StatelessWidget {
                           backgroundColor: Colors.white,
                           foregroundColor: Colors.black87,
                           padding: const EdgeInsets.symmetric(
-                              horizontal: 40, vertical: 12),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(12),
-                          ),
+                              horizontal: 60, vertical: 12),
                         ),
                         child: const Text('Login'),
                       ),
